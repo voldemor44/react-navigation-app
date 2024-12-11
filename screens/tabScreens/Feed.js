@@ -17,18 +17,7 @@ import { useLayoutEffect } from "react";
 export default function Feed() {
   const navigation = useNavigation();
 
-  useLayoutEffect(() => {
-    navigation.setOptions({
-      headerLeft: () => (
-        <Pressable onPress={() => navigation.openDrawer()}>
-          <Image
-            source={require("../../assets/beto.jpeg")}
-            style={{ width: 40, height: 40, borderRadius: 100, marginLeft: 15 }}
-          />
-        </Pressable>
-      ),
-    });
-  }, []);
+
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
